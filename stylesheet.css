@@ -1,7 +1,7 @@
-body {
+* {
 
+	font-family: arial, sans-serif;
 }
-
 
 
 .container {
@@ -15,13 +15,19 @@ body {
 	height: 95%;
 
 
-
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+
+
 	-webkit-align-items:center;
 	align-items: center;
+
 	-webkit-justify-content:center;
 	justify-content: center;
+
 	position: absolute;
 	right: 0;
 	left: 0;
@@ -32,17 +38,15 @@ body {
 
 #mainlogo {
 text-align: center;
-position: absolute;
 margin:auto;
 
 }
 
 #country{
-
 color: blue;
 position: absolute;
 margin-top: -20px;
-margin-left: 245px;
+margin-left: 260px;
 width: 200px;
 text-align: right;
 
@@ -114,10 +118,12 @@ box-shadow: 1px 1px 1px lightblue;
 	padding-left: 10px;
 }
 
-p {
+#language {
 
-	position: absolute;
-	margin-top: 150px;
+	
+	font-size: 14px;
+	margin-top: 30px;
+	z-index: 10;
 }
 
 
@@ -127,7 +133,7 @@ input[type="submit"] {
 	background-color: lightgrey;
 	color: grey;
 	height: 35px;
-	width: 130px;
+	width: 135px;
 	margin-top: 30px;
 	margin-right: 5px;
 	font-weight: bold;
