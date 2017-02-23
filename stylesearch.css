@@ -3,8 +3,10 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-font-family: arial, sans serif;
-font-size:small;
+font-family: arial, sans-serif;
+font-size:medium;
+
+
 
 
 }
@@ -13,6 +15,81 @@ font-size:small;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   }
+
+  * {
+
+  	margin: 0;
+ 	padding: 0;
+
+  }
+
+
+body {
+
+	margin:0;
+	padding: 0;
+	position: relative;
+	
+}
+
+  .signin_bar {
+
+  	margin:0;
+	height: 75px;
+	width: 100%;
+	min-width: 900px;
+	position:absolute; 
+	padding-top: 25px;
+	/*vertical-align: center;  ez meg nem csinal semmit...*/
+
+}
+
+
+
+		#menulogo {
+
+			height: 20px;
+			width: 20px;
+			background-image: url('google_icons.png');
+			background-position: -138px -42px;
+
+			position: absolute;
+			right: 95px;
+			top: 30px;
+			z-index: 200;
+			opacity: 0.5;
+		}
+
+		#menulogo:hover {
+
+			opacity: 1;
+		}
+
+
+		#signin input[type="submit"]  {
+
+	font-weight: bold;
+	background-color: blue;
+	border: 2px solid blue;
+	color:white;
+	border-radius: 3px;
+	height: 30px;
+	width: 70px;
+	z-index: 200;
+	margin-right: 10px;
+
+	position: absolute;
+	right: 0;
+
+			}
+
+		#signin input[type="submit"]:hover {
+
+		box-shadow: 1px 1px 1px lightblue;
+
+			}	
+
+
 
 
 .flexbox
@@ -44,8 +121,11 @@ font-size:small;
   	margin: 0;
  	padding: 0;
  	min-height: 100vh;
+ 	min-width: 1200px;
 
 }
+
+
 
 
 
@@ -53,16 +133,143 @@ font-size:small;
 
 {
 
-height: 50px;
+height: 120px;
 width: inherit;
 
-background-color: blue;
+background-color: rgb(250, 250, 250);
 
 -webkit-box-flex:0;
 flex: none;
+border-bottom: 1px solid rgb(228, 228, 228);
 
 
 }
+
+	.searchbar {
+
+		height: 75px;
+		width:inherit;
+		
+
+		vertical-align: center; 
+		padding: 25px 0px 0px 10px;
+		position: relative;
+
+
+	}
+
+
+		#logo {
+
+			width: auto; 
+			max-height: 40px;
+			position: absolute;
+			margin-left: 8px;
+		}
+
+
+		#searchform {
+
+			height: 40px;
+			width: 600px;
+			margin-left: 140px;
+			position: absolute;
+			
+
+		}
+
+		#mainsearch {
+
+		height: 40px;
+		width: 600px;
+		border-radius: 3px;
+		padding-left: 10px;
+
+		}
+
+		#loupe {
+
+			right: 15px;
+			top:10px;
+			order: 1;
+			background-image: url('http://www.newdesignfile.com/postpic/2010/08/magnifying-glass-search-icon_286761.png');
+			background-size: 20px;
+			height: 20px;
+			width: 20px;
+			position: absolute;
+		}
+
+
+	.navbar {
+
+		height: 45px;
+		width: inherit;
+		
+		position: relative;
+		font-size: 12px;
+		margin-right: 450px;
+		margin-left: 150px;
+		padding-top:5px;
+
+
+	}
+
+		
+		.navbar li {
+			display: inline-block;
+			padding: 8px 15px 8px 15px;
+			border:1px solid rgb(250, 250, 250);
+			color: rgb(119, 119, 119);
+
+			
+						}
+
+
+		.navbar_l {
+
+			list-style-type: none;
+			padding: inherit;
+			position: absolute;
+			left: 0;
+					}
+
+
+			.navbar_l li {
+
+				margin-right: 0px;
+			}
+
+
+			#all {
+
+				color: blue;
+				font-weight: bold;
+				border-bottom: 4px solid blue;
+			}
+
+			
+		.navbar_r {
+
+			padding:inherit;
+			position: absolute;
+			right: 0;
+					}
+
+			.navbar_r li {
+
+				margin-left: 0px;
+				
+			}
+
+			#tools:hover {
+				border: 1px solid grey;
+				background-color: silver;
+
+			}
+
+
+
+
 
 .content {
 
@@ -70,12 +277,73 @@ display: flex;
 flex: 1;
 /*ugyanazt csinalja mint a flex: 2 1 auto;*/
 
+-webkit-flex-flow: row;
+ flex-flow: row;
+ flex-wrap: wrap;
+
 width: inherit;
 
 min-height: 70px;
-background-color: grey;
+
+padding: 15px 450px 10px 155px;
+
 
 }
+
+
+	.result {
+
+		margin-bottom: 30px;
+
+	}
+
+		a  {
+
+			text-decoration: none;
+			font-size: 18px;
+			color: blue;
+
+			
+		}
+
+		a:hover  {
+
+			text-decoration: underline;
+
+			
+		}
+
+		.greenlink {
+
+			color: green;
+			font-size: 14px;
+
+		}
+
+		.text {
+			font-size: 14px;
+		}
+
+
+	.related {
+
+		
+		margin: 20px 0px 20px 0px;
+	}
+
+		.related td {
+			font-size: 14px;
+			height: 25px;
+			width: 90px;
+			color: blue;
+			font-weight: bold;
+
+		}
+
+		.related td:hover {
+			text-decoration: underline;
+
+		}
 
 
 
@@ -83,7 +351,7 @@ background-color: grey;
 
 {
 
-height: 50px;
+height: 90px;
 width: inherit;
 
 background-color: yellow;
@@ -91,5 +359,30 @@ background-color: yellow;
 -webkit-box-flex:0;
 flex: none;
 
+padding: 0px 450px 0px 150px;
 
+}
+
+	.location {
+
+		height: 45px;
+		width:inherit;
+		background-color: red;
+
+
+	}
+
+
+
+
+
+.pointer:hover {
+
+	cursor: pointer;
+}
+
+li:hover {
+
+	cursor: pointer;
+	color: #222;
 }
